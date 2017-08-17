@@ -1,12 +1,12 @@
 # Part 1 - Domain Implementation
 
 * _Domain objects_ are the backbone for an application and contain the [business logic](https://en.wikipedia.org/wiki/Business_logic).
-* Create a sub package of `io.zipcoder.tc_spring_vehiclefactory_application` named `controller`.
+* Create a sub package of `io.zipcoder.tc_spring_vehiclefactory_application` named `domain`.
 
 
 ## Part 1.1 - Create class `Vehicle`
 
-* Create an _abstract_ `Vehicle` class in the `domain` sub-package.
+* Create an _abstract_ class `Vehicle` in the `domain` sub-package.
 * `Vehicle` class signature is annotated with `@Entity`
 * `Vehicle` has an `id` instance variable of type `Long`
 	* `id` should be `annotated` with
@@ -133,13 +133,13 @@
 # Part 4 - Creating Factories
 
 ## Part 4.1 - Create class `AbstractRandomEntityFactory`
-* Create an _abstract_ `AbstractRandomEntityFactory<E>` class in the `tc_spring_vehiclefactory_application.utilities` package
+* Create an _abstract_ class `AbstractRandomEntityFactory<E>` in the `tc_spring_vehiclefactory_application.utilities` package
 * The class should declare a method `abstract public E create()`
 * The class should define a method `public final Stream<E> createStream(int numberOfVehicles)` which generates a `Stream` of `E` whose `count` is the respective `numberOfVehicles`.
 
 
 ## Part 4.2 - Create class `AbstractRandomVehicleFactory`
-* Create an _abstract_ `AbstractRandomVehicleFactory<E extends Vehicle>` class in the `tc_spring_vehiclefactory_application.domain` package.
+* Create an _abstract_ class `AbstractRandomVehicleFactory<E extends Vehicle>` in the `tc_spring_vehiclefactory_application.domain` package.
 * The class should declare method `abstract public E createMake(String make)`
 * The class should define method `public final E createMake(VehicleMake make)` which makes use of the abstract `createMake(String make)`.
 * The class should define method `public E create()` which returns a vehicle whose `vehicleMake` is assigned to a random value from the `VehicleMake` enum
@@ -151,7 +151,7 @@
 
 
 ## Part 4.3 - Create class `AbstractRandomBikeFactory`
-* Create an _abstract_ `AbstractRandomBikeFactory` class in the `tc_spring_vehiclefactory_application.domain.bike` package.
+* Create an _abstract_ class `AbstractRandomBikeFactory` in the `tc_spring_vehiclefactory_application.domain.bike` package.
 * The class should be a subclass of `AbstractRandomVehicleFactory<Bike>`.
 * The class should define method `public Bike createMake(String make)` which returns a `new Bike` whose
 	* `vehicleMake` is set to the respective `make` argument
@@ -176,7 +176,7 @@
 
 
 ## Part 4.5 - Create class `AbstractRandomCarFactory`
-* Create an _abstract_ `AbstractRandomCarFactory` class in the `tc_spring_vehiclefactory_application.domain.car` package.
+* Create an _abstract_ class `AbstractRandomCarFactory` in the `tc_spring_vehiclefactory_application.domain.car` package.
 * The class should be a subclass of `AbstractRandomVehicleFactory<Car>`.
 * The class should define method `public Bike createMake(String make)` which returns a `new Car` whose
 	* `vehicleMake` is set to the respective `make` argument
