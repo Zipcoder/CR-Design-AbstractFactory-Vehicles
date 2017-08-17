@@ -17,24 +17,24 @@
 		* `@Column(name = "VEHICLE_ID")`
 			* specifies mapped column for a persistent property or field
 
-* `Vehicle` has an `isHybrid` instance variable of type `Boolean`
+* `Vehicle` has a `isHybrid` instance variable of type `Boolean`
 	* `isHybrid` should be `annotated` with
 		* `@Column(name = "VEHICLE_IS_HYBRID")`
 
-* `Vehicle` has an `numberOfWheels` instance variable of type `Integer`
+* `Vehicle` has a `numberOfWheels` instance variable of type `Integer`
 	* `numberOfWheels` should be `annotated` with
 		* `@Column(name = "VEHICLE_NUMBER_OF_WHEELS")`
 
-* `Vehicle` has an `model` instance variable of type `String`
+* `Vehicle` has a `model` instance variable of type `String`
 	* `model` should be `annotated` with
 		* `@Column(name = "VEHICLE_MODEL")`
 
-* `Vehicle` has an `make` instance variable of type `String`
+* `Vehicle` has a `make` instance variable of type `String`
 	* `make` should be `annotated` with
 		* `@Column(name = "VEHICLE_MAKE")`
 
 * Create a `getter` and `setter` for each of the respective instance variables.
-* The class should have a nullable constructor (this will be used by the Spring framework)
+* The class should have a [nullary constructor](https://en.wikipedia.org/wiki/Nullary_constructor) (this will be used by the Spring framework).
 * The class should have a constructor which has parameters of `String`, `String`, `int`, `boolean`, and sets each of the instance variables respectively.
 
 ## Part 1.2 - Create enum `VehicleMake`
@@ -48,7 +48,7 @@
 * Create a `Bike` class in the `domain.bike` sub-package.
 * `Bike` class signature is annotated with `@Entity`
 * `Bike` is a subclass of `Vehicle`
-* `Bike` has an empty [nullary constructor](https://en.wikipedia.org/wiki/Nullary_constructor)
+* `Bike` has an empty _nullable constructor_
 * `Bike` has a constructor which has parameters of `String`, `String`, `boolean` and sets  `numberOfWheel` to a value of `2`.
 
 ## Part 1.4 - Create class `Car`
