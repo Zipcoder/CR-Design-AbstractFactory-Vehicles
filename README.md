@@ -202,7 +202,7 @@ super.createMake(VehicleMake vehicleMake)
 * Create class `RandomVehicleFactoryLookup` in the `tc_spring_vehiclefactory_application.utilities` package.
 * The class should have an instance variable, `map` of type `HashMap<String, AbstractRandomVehicleFactory>`.
 * The class should define a method `private addToMap(AbstractRandomVehicleFactory... factories)`, which maps each of the respective factory objects to their [simple class name](https://www.tutorialspoint.com/java/lang/class_getsimplename.htm).
-* The class should define a nullable constructor, which calls
+* The class should define a _nullary constructor_, which calls
 
 ```java
 addToMap(new RandomHondaCarFactory(), new RandomYamahaBikeFactory());
