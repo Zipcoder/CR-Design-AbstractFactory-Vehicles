@@ -1,6 +1,4 @@
-package io.zipcoder.tc_spring_personfactory_application.domain.bike;
-
-import io.zipcoder.tc_spring_personfactory_application.domain.VehicleMake;
+package io.zipcoder.tc_spring_vehiclefactory_application.domain.bike;
 
 /**
  * Created by leon on 8/16/17.

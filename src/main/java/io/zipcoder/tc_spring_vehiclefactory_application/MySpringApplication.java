@@ -1,4 +1,4 @@
-package io.zipcoder.tc_spring_personfactory_application;
+package io.zipcoder.tc_spring_vehiclefactory_application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
