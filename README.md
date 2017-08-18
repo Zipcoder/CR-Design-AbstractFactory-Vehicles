@@ -1,3 +1,10 @@
+# Vehicle Factory
+* **Lab Author** - Leon Hunter
+* **Purpose** - to demonstrate the [Abstract Factory Design pattern](https://sourcemaking.com/design_patterns/abstract_factory)
+* **Objective**
+	* to implement a `VehicleFactoryController` which uses a `VehicleFactory` to generate `Vehicle` objects.
+	* to implement a `VehicleController` which is a _data store_ for `Vehicle`.
+
 # Part 1 - Domain Implementation
 
 * _Domain objects_ are the backbone for an application and contain the [business logic](https://en.wikipedia.org/wiki/Business_logic).
