@@ -1,5 +1,4 @@
 # Vehicle Factory
-* **Lab Author** - Leon Hunter
 * **Purpose** - to demonstrate the [Abstract Factory Design pattern](https://sourcemaking.com/design_patterns/abstract_factory)
 * **Objective**
 	* to implement a `VehicleFactoryController` which uses a `VehicleFactory` to generate `Vehicle` objects.
@@ -199,6 +198,12 @@ super.createMake(VehicleMake vehicleMake)
 ```
 
 
+## Part 4.7 - Create class `RandomVehicleFactoryCreator`
+* Create class `RandomVehicleFactoryCreator` in the `tc_spring_vehiclefactory_application.domain` package.
+* The class should define method `public RandomHondaCarFactory createHondaCarFactory()` which returns a `new RandomHondaCarFactory`.
+* The class should define method `public RandomYamahaBikeCreator createHondaCarFactory()` which returns a `new RandomYamahaBikeCreator`.
+
+
 
 
 
@@ -209,10 +214,10 @@ super.createMake(VehicleMake vehicleMake)
 * Create class `RandomVehicleFactoryLookup` in the `tc_spring_vehiclefactory_application.utilities` package.
 * The class should have an instance variable, `map` of type `HashMap<String, AbstractRandomVehicleFactory>`.
 * The class should define a method `private addToMap(AbstractRandomVehicleFactory... factories)`, which maps each of the respective factory objects to their [simple class name](https://www.tutorialspoint.com/java/lang/class_getsimplename.htm).
-* The class should define a _nullary constructor_, which calls
+* The class should define a _nullary constructor_, which adds each of the concrete vehicle factories to `map`.
 
 ```java
-addToMap(new RandomHondaCarFactory(), new RandomYamahaBikeFactory());
+addToMap(randomHondaCarFactory, randomYamahaBikeFactory);
 ```
 
 * The class should define a method `public AbstractRandomVehicleFactory get(String simpleClassName)` which
