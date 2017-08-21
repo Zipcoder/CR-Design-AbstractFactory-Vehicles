@@ -213,7 +213,8 @@ super.createMake(VehicleMake vehicleMake)
 
 # Part 5 - Create class `RandomVehicleFactoryLookup`
 * Create class `RandomVehicleFactoryLookup` in the `tc_spring_vehiclefactory_application.utilities` package.
-* The class should have an instance variable, `map` of type `HashMap<String, AbstractRandomVehicleFactory>`.
+* The class should have an instance variable, `map`, of type `HashMap<String, AbstractRandomVehicleFactory>`.
+* The class should have an instance variable, `rvfc`, of type `RandomVehiclFactoryCreator` which is annotated with `@Injected`
 * The class should define a method `private addToMap(AbstractRandomVehicleFactory... factories)`, which maps to each of the respective factory objects from their [simple class name](https://www.tutorialspoint.com/java/lang/class_getsimplename.htm).
 * The class should define a _nullary constructor_, which adds each of the concrete vehicle factories to `map`.
 
