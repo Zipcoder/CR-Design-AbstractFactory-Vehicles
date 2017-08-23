@@ -251,3 +251,17 @@ addToMap(randomHondaCarFactory, randomYamahaBikeFactory);
 
 
 # Part 7 - Test via Postman
+* Yep...
+
+
+
+
+
+
+
+
+
+
+
+# Part 8 - Implement builder pattern
+* Using the [builder lab](https://github.com/Zipcoder/TC-Spring-LicenseBuilder-Application-) as an example, redefine the concrete factory classes to use composite `VehicleBuilder` objects to generate new vehicles.
