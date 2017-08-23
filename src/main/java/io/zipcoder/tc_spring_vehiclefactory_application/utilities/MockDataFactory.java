@@ -9,10 +9,10 @@ import java.util.Random;
 /**
  * @author leon.hunter
  */
-public final class RandomUtils {
+public final class MockDataFactory {
     private static volatile Random random = new Random();
 
-    private RandomUtils() {
+    private MockDataFactory() {
     }
 
     /**
