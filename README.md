@@ -1,10 +1,10 @@
 # Vehicle Factory
 * **Purpose** - to demonstrate the [Abstract Factory Design pattern](https://sourcemaking.com/design_patterns/abstract_factory)
+* **Design Description** - Provide an interface for creating families of related or dependent objects without specifying their conrete classes.
+	* Description Source - _Design Patterns: Gang of Four_
 * **Objective**
 	* to implement a `VehicleFactoryController` which uses a `VehicleFactory` to generate `Vehicle` objects.
 	* to implement a `VehicleController` which is a _data store_ for `Vehicle`.
-* **Design Description** - Provide an interface for creating families of related or dependent objects without specifying their conrete classes.
-	* Description Source - _Design Patterns: Gang of Four_
 
 # Part 1 - Domain Implementation
 
